@@ -2,16 +2,16 @@
   "name": "rollup-plugin-use-client",
   "version": "0.0.0-development",
   "description": "Rollup plugin to add back the use client directive that is stripped off by rollup",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "build": "tsc && cp package.json dist",
     "semantic-release": "semantic-release",
     "prepare": "husky install"
   },
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./index.js"
   },
   "repository": {
     "type": "git",
