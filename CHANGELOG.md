@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.1.11...v1.1.12) (2022-12-08)
+
+
+### Bug Fixes
+
+* add quotes ([00d7c1a](https://github.com/DParfitt/rollup-plugin-use-client/commit/00d7c1a6d742d4d55a0cad269f99c85439b6239c))
+
 ## [1.1.11](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.1.10...v1.1.11) (2022-12-08)
 
 
