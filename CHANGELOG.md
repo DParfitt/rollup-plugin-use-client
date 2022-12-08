@@ -1,3 +1,10 @@
+## [1.1.13](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.1.12...v1.1.13) (2022-12-08)
+
+
+### Bug Fixes
+
+* remove husky ([c1fe38e](https://github.com/DParfitt/rollup-plugin-use-client/commit/c1fe38e1cf594892c7a1532dd6970b954dbb2859))
+
 ## [1.1.12](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.1.11...v1.1.12) (2022-12-08)
 
 
