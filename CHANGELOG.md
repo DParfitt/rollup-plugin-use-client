@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.3.0...v1.3.1) (2022-12-08)
+
+
+### Bug Fixes
+
+* basic regex ([7f3c1db](https://github.com/DParfitt/rollup-plugin-use-client/commit/7f3c1db046762a92af088f8084fddb963eb41e54))
+
 # [1.3.0](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.2.0...v1.3.0) (2022-12-08)
 
 
