@@ -1,0 +1,41 @@
+import type { Plugin, OutputAsset, OutputChunk } from "rollup";
+import path from "path";
+
+const isOutputChunk = (
+  moduleChunk: OutputChunk | OutputAsset
+): moduleChunk is OutputChunk => "code" in moduleChunk;
+
+const filesToTransform = new Map<string, string>();
+
+export const rollupPluginUseClient: Plugin = {
+  name: "use-client-plugin",
+  transform(code, id) {
+    if (code.includes("use client")) {
+      const file = path.parse(
+        path.relative(`${process.cwd()}${path.sep}src`, id)
+      );
+      filesToTransform.set(
+        `${file.dir}${file.dir ? path.sep : ""}${file.name}`,
+        code
+      );
+    }
+  },
+  generateBundle(_outputOptions, bundle) {
+    const keys = Object.keys(bundle);
+
+    for (const moduleId of keys) {
+      const outputModule = bundle[moduleId] as OutputAsset | OutputChunk;
+
+      const file = path.parse(moduleId);
+
+      if (
+        isOutputChunk(outputModule) &&
+        filesToTransform.has(
+          `${file.dir}${file.dir ? path.sep : ""}${file.name}`
+        )
+      ) {
+        outputModule.code = `'use client';\n${outputModule.code}`;
+      }
+    }
+  },
+};
