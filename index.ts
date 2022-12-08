@@ -1,3 +1,5 @@
+"use client";
+
 import type { Plugin, OutputAsset, OutputChunk } from "rollup";
 import path from "path";
 
@@ -18,7 +20,7 @@ export const rollupPluginUseClient: UseClientPlugin = ({
 } = {}) => ({
 	name: "rollup-plugin-use-client",
 	transform(code, id) {
-		if (code.includes(directive)) {
+		if (code.match(new RegExp(`^['"]${directive}['"];`, "m"))) {
 			const file = path.parse(
 				path.relative(`${process.cwd()}${path.sep}src`, id),
 			);
