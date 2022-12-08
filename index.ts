@@ -47,3 +47,5 @@ export const rollupPluginUseClient: UseClientPlugin = ({
     }
   },
 });
+
+export default rollupPluginUseClient;
