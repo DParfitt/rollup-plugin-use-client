@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.2.0...v1.3.0) (2022-12-08)
+
+
+### Features
+
+* added linting step ([852c59b](https://github.com/DParfitt/rollup-plugin-use-client/commit/852c59b554c78529273e8be8040413fb4f16ff2f))
+
 # [1.2.0](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.1.14...v1.2.0) (2022-12-08)
 
 
