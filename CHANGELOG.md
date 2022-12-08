@@ -1,3 +1,11 @@
+## [1.1.10](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.1.9...v1.1.10) (2022-12-08)
+
+
+### Bug Fixes
+
+* add commit linting ([f562d78](https://github.com/DParfitt/rollup-plugin-use-client/commit/f562d78af0c677eb0597ad4a778636f3ea3b9270))
+* remove husky checks in pipeline ([7e958ba](https://github.com/DParfitt/rollup-plugin-use-client/commit/7e958badc34359477a51b5fa46098aa3984127e2))
+
 ## [1.1.9](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.1.8...v1.1.9) (2022-12-08)
 
 
