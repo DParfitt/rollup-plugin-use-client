@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "build": "tsc && cp package.json dist/package.json",
     "semantic-release": "semantic-release"
+  },
+  "exports": {
+    ".": "./index.js"
   },
   "repository": {
     "type": "git",
