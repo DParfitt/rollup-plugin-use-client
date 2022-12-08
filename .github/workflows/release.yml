@@ -4,8 +4,8 @@ on:
     branches:
       - main
 jobs:
-  build:
-    name: Build
+  release:
+    name: Build and Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,22 +21,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-  release:
-    name: Release
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          persist-credentials: false
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 'lts/*'
-      - name: Install dependencies
-        run: npm ci
+      - name: CD
+        run: cd ./dist
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
