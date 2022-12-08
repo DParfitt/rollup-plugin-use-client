@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.1.10...v1.1.11) (2022-12-08)
+
+
+### Bug Fixes
+
+* debug pkgRoot ([bb434ff](https://github.com/DParfitt/rollup-plugin-use-client/commit/bb434ff632dc4f33cd893219eaa7aedfa683330e))
+
 ## [1.1.10](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.1.9...v1.1.10) (2022-12-08)
 
 
