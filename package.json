@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-use-client",
   "version": "0.0.0-development",
-  "description": "Rollup plugin to add back the use client directive that is stripped off by rollup",
+  "description": "Rollup plugin to add back the 'use client' directive that is stripped off by rollup",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
