@@ -7,8 +7,16 @@ const isOutputChunk = (
 
 const filesToTransform = new Map<string, string>();
 
-export const rollupPluginUseClient: Plugin = {
-  name: "use-client-plugin",
+export type RollupPluginUseClientProps = {
+  directive?: string;
+};
+
+export type UseClientPlugin = (props: RollupPluginUseClientProps) => Plugin;
+
+export const rollupPluginUseClient: UseClientPlugin = ({
+  directive = "use client",
+}) => ({
+  name: "rollup-plugin-use-client",
   transform(code, id) {
     if (code.includes("use client")) {
       const file = path.parse(
@@ -34,8 +42,8 @@ export const rollupPluginUseClient: Plugin = {
           `${file.dir}${file.dir ? path.sep : ""}${file.name}`
         )
       ) {
-        outputModule.code = `'use client';\n${outputModule.code}`;
+        outputModule.code = `'${directive}';\n${outputModule.code}`;
       }
     }
   },
-};
+});
