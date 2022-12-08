@@ -21,8 +21,6 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - name: CD
-        run: cd ./dist
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
