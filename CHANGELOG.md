@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.1.14...v1.2.0) (2022-12-08)
+
+
+### Features
+
+* add default export ([0da9ca6](https://github.com/DParfitt/rollup-plugin-use-client/commit/0da9ca64f647127158fa72618a33a645e6eb6faf))
+
 ## [1.1.14](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.1.13...v1.1.14) (2022-12-08)
 
 
