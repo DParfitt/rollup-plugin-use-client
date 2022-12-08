@@ -1,3 +1,10 @@
+## [1.1.14](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.1.13...v1.1.14) (2022-12-08)
+
+
+### Bug Fixes
+
+* add readme to dist ([fb2b917](https://github.com/DParfitt/rollup-plugin-use-client/commit/fb2b91760a1139d2923ececf7c2416e109059727))
+
 ## [1.1.13](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.1.12...v1.1.13) (2022-12-08)
 
 
