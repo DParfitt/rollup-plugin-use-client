@@ -1,5 +1,3 @@
-"use client";
-
 import type { Plugin, OutputAsset, OutputChunk } from "rollup";
 import path from "path";
 
