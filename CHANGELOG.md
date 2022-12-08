@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.3.1...v1.3.2) (2022-12-08)
+
+
+### Bug Fixes
+
+* remove test ([0adadf2](https://github.com/DParfitt/rollup-plugin-use-client/commit/0adadf2dbd85239466793d2d6e526a6eb8dcb353))
+
 ## [1.3.1](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.3.0...v1.3.1) (2022-12-08)
 
 
