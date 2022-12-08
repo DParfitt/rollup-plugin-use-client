@@ -11,11 +11,11 @@ export type RollupPluginUseClientProps = {
   directive?: string;
 };
 
-export type UseClientPlugin = (props: RollupPluginUseClientProps) => Plugin;
+export type UseClientPlugin = (props?: RollupPluginUseClientProps) => Plugin;
 
 export const rollupPluginUseClient: UseClientPlugin = ({
   directive = "use client",
-}) => ({
+} = {}) => ({
   name: "rollup-plugin-use-client",
   transform(code, id) {
     if (code.includes("use client")) {
