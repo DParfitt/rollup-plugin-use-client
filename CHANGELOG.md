@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.3.2...v1.4.0) (2022-12-09)
+
+
+### Features
+
+* add release flow ([c9d27d2](https://github.com/DParfitt/rollup-plugin-use-client/commit/c9d27d2934f5dba3da4b4bbd5380dcbf6b90d966))
+
 ## [1.3.2](https://github.com/DParfitt/rollup-plugin-use-client/compare/v1.3.1...v1.3.2) (2022-12-08)
 
 
