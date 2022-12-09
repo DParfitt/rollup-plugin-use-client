@@ -27,6 +27,12 @@
       {
         "pkgRoot": "dist"
       }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": "dist"
+      }
     ]
   ]
 }
